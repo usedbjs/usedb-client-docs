@@ -1,7 +1,6 @@
 module.exports = {
   someSidebar: {
     "Getting Started": ["introduction", "installation", "motivation"],
-    Examples: ["runtime-binding-example"],
     Concepts: [
       "model",
       "binding",
@@ -17,14 +16,15 @@ module.exports = {
       },
       "cache",
     ],
+    Examples: ["runtime-binding-example"],
     "ServerSide Binding": [
       {
-        "Laravel package": [
+        Laravel: [
           "laravel/getting-started",
           "laravel/middleware",
           "laravel/security",
           {
-            ELOQUENT: ["laravel/relationships"],
+            Eloquent: ["laravel/relationships"],
           },
         ],
       },
