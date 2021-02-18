@@ -21,6 +21,7 @@ module.exports = {
       {
         Laravel: [
           "laravel/getting-started",
+          "laravel/usage",
           "laravel/middleware",
           "laravel/security",
           {
