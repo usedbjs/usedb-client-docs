@@ -13,7 +13,7 @@ slug: /using-the-runtime-binding
 
 ## Steps
 
-#### 1. Define Models
+### 1. Define Models
 
 ```
 import { types } from "@usedb/core";
@@ -26,7 +26,7 @@ const Post = types.model({
 
 - For complete type references [refer.](https://mobx-state-tree.js.org/overview/types)
 
-#### 2. Initialize cache
+### 2. Initialize cache
 
 ```
 import { createModel } from "@usedb/core";
@@ -43,11 +43,11 @@ const DBModel = createModel({
 export const db = DBModel.create();
 ```
 
-#### 3. Create Connection object
+### 3. Create Connection object
 
-```
+```jsx
 import { Provider } from '@usedb/react';
-import { RuntimeBinding } from '@usedb/core';
+import { RuntimeBinding, Connection } from "@usedb/core";
 import { db } from "./db";
 
 const connection = new Connection({ bind: new RuntimeBinding(), db });
@@ -61,12 +61,12 @@ const App = () => {
 };
 ```
 
-#### 4. Perform Queries
+### 4. Perform Queries
 
 ##### Create
 
 ```
-const result = useDB(db.Post.create({ data: { title: "Hello world" }}))
+const result = useDB(db.Post.create({ data: { title: "Hello world" } }));
 ```
 
 ##### Read

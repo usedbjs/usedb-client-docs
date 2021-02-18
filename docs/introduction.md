@@ -1,8 +1,7 @@
 ---
-id: concepts
+id: introduction
 title: What is useDB?
-sidebar_label: What is useDB?
-slug: /
+sidebar_label: Introduction
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
