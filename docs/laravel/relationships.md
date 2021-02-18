@@ -4,7 +4,7 @@ title: Relationships
 sidebar_label: Relationships
 ---
 
-## Reading Data
+## Fetching Data
 
 When you want objects to be returned with their associated models, then you have to mention the property to access child elements from a parent in the `include` property of `payload` field of the JSON provided.
 

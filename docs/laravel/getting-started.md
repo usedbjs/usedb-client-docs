@@ -17,7 +17,7 @@ composer require geekyants/laravel-usedb
 
 ### Publish the configuration
 
-After installation, run the command below to move package's config files to your project config.
+After installation, run the command below to move the package's config files to your project config directory.
 
 ```jsx
 php artisan vendor:publish --tag=config
@@ -27,7 +27,7 @@ You will find the `usedb.php` file in your project config folder. All the config
 
 ### Set the Model path
 
-To make the package track your models, you need to define the path of the folder in the config file where all the models of your app will be present.
+To make the package track your models, you need to define the path of the folder in the config file where all the models are stored.
 
 ```jsx
 'modelPath' => 'App\Models\\'

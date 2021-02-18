@@ -12,7 +12,6 @@ The middleware property of the usedb.php config file contains entries for the mi
     ],
 ```
 
-<br/>
 Let's say you have a middleware MyMiddleware and have registered it in your app with the name **first**.
 
 ```jsx title="MyMiddleware.php"
