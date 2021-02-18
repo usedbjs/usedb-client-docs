@@ -1,5 +1,5 @@
 module.exports = {
-  title: "My Site",
+  title: "UseDB",
   tagline: "The tagline of my site",
   url: "https://usedbjs.github.io",
   baseUrl: "/usedb/",
@@ -10,14 +10,14 @@ module.exports = {
   projectName: "usedb", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "My Site",
+      title: "UseDB",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg",
       },
       items: [
         {
-          to: "docs/",
+          to: "docs/introduction",
           activeBasePath: "docs",
           label: "Docs",
           position: "left",
@@ -38,7 +38,7 @@ module.exports = {
           items: [
             {
               label: "Style Guide",
-              to: "docs/",
+              to: "docs/introduction",
             },
             {
               label: "Second Doc",
