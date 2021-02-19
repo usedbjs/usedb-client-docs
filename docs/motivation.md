@@ -5,21 +5,14 @@ sidebar_label: Motivation
 slug: /motivation
 ---
 
-GraphQL separates database models from client APIs by using resolvers, so your APIs are not tightly coupled with your underlying data model. So, you just define queries, put resolvers and those resolvers can fetch from any backend.
+As a React developer who has experience with full-stack backend frameworks like [Laravel](https://laravel.com/) and [Ruby on Rails](https://rubyonrails.org/), I miss how simple it was to build CRUD apps with a database model available right in the controller and the view files.
 
-**But here're the limitations:**
+To interact with the database in React, we first build APIs, then write layers in the front-end to consume them.
 
-- GraphQL increases complexity for general use-cases.
-- Performance issues with nested resolvers, if not set up correctly) (n+1 issue, needs DataLoader to fix)
+When we disconnect these two, the mental model of building with full control of data changes, we start to lose power and control — our focus shifts to dealing with intermediate layers.
 
-**Why useDB ?**
+We have tried to solve this overhead with useDB. useDB works like a secure DB connection for React & JS apps. On a high level, useDB provides a query-builder similar to the backend frameworks that is serialized and sent over to the server. The server then reads the queries and responds with the dataset from the database.
 
-1. Simplifies Access control.
-2. No need to setup resolvers. ORM already knows how to resolve. Just restrict the access of ORM.
-3. No n+1 issue as findMany will directly execute on ORM.
+We have built plugins for Laravel and Node that simplifies the backend handling further.
 
-<!-- <br/>
-This is what it takes to get a CRUD on the Post model in useDB with role-base access. API+Role based access with so few lines of code:
-
-1. Define Model in your ORM
-2. Define middleware for rules in your own programming language. -->
+You might relate it to GraphQL and the tooling around it. It's similar but more relatable to database CRUD operations.
