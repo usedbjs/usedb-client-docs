@@ -23,3 +23,42 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+.backlink {
+  padding-bottom: 1rem;
+}
+
+.backlink img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.backlink h2 {
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+/* .backlink h2 a {
+  color: black;
+} */
+
+.backlink h2 a:hover {
+  /* color: #78468e; */
+  text-decoration: none;
+}
+
+#moreProjectsHeading {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .moreProjects {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 15px;
+  }
+}
+
+.footer__link-item:hover {
+  text-decoration: none;
+}
