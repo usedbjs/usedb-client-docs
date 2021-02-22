@@ -1,34 +1,62 @@
 ---
 id: installation
 title: Installation
-sidebar_label: Installation
 slug: /installation
 ---
 
-> Prerequisite : mobx-react
+## PreRequisite
 
-NPM
+useDB has a peer dependency on mobx-react.
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+defaultValue="npm"
+values={[
+{label: 'NPM', value: 'npm'},
+{label: 'Yarn', value: 'Yarn'},
+]}>
+
+<TabItem value="npm">
 
 ```
 npm install mobx-react
 ```
 
-Yarn
+</TabItem>
+<TabItem value="Yarn">
 
 ```
 yarn add mobx-react
 ```
 
-You can install @usedb/core and @usedb/react as a package from NPM or yarn.
+ </TabItem>
 
-NPM
+</Tabs>
+
+## Installing UseDB
+
+<Tabs
+defaultValue="npmUsedb"
+values={[
+{label: 'NPM', value: 'npmUsedb'},
+{label: 'Yarn', value: 'YarnUsedb'},
+]}>
+
+<TabItem value="npmUsedb">
 
 ```
 npm install @usedb/core @usedb/react
 ```
 
-Yarn
+</TabItem>
+<TabItem value="YarnUsedb">
 
 ```
 yarn add @usedb/core @usedb/react
 ```
+
+ </TabItem>
+
+</Tabs>

@@ -62,12 +62,3 @@
 .footer__link-item:hover {
   text-decoration: none;
 }
-
-.navbar {
-  /* background-color: #25c2a0; */
-  /* color: white; */
-}
-
-.navbar a:hover {
-  color: white;
-}
