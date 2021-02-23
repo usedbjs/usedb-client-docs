@@ -64,7 +64,10 @@ const Backlinks = (props) => (
           <h2>
             <span>
               <a href="https://syncstate.github.io/" target="_blank">
-                <img src="../static/img/synchState-logo.png" width="25px"></img>
+                <img
+                  width="25px"
+                  src={useBaseUrl("img/synchState-logo.png")}
+                ></img>
                 SyncState
               </a>
             </span>
@@ -78,7 +81,10 @@ const Backlinks = (props) => (
           <h2>
             <span>
               <a href="https://nativebase.io/" target="_blank">
-                <img src="../static/img/native-base.jpeg" width="25px"></img>
+                <img
+                  src={useBaseUrl("img/native-base.jpeg")}
+                  width="25px"
+                ></img>
                 NativeBase
               </a>
             </span>
@@ -94,7 +100,7 @@ const Backlinks = (props) => (
           <h2>
             <span>
               <a href="https://vue-native.io/" target="_blank">
-                <img src="../static/img/vueNative.png" width="25px"></img>
+                <img src={useBaseUrl("img/vueNative.png")} width="25px"></img>
                 Vue Native
               </a>
             </span>
@@ -110,7 +116,7 @@ const Backlinks = (props) => (
           <h2>
             <span>
               <a href="https://builderx.io/" target="_blank">
-                <img src="../static/img/builderx.png" width="25px"></img>
+                <img src={useBaseUrl("img/builderx.png")} width="25px"></img>
                 BuilderX
               </a>
             </span>
@@ -154,11 +160,6 @@ function Home() {
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
-              {/* <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div> */}
               <Backlinks />
             </div>
           </section>
