@@ -3,7 +3,7 @@ module.exports = {
   tagline: "DB connection for React without writing the APIs",
   url: "https://usedbjs.github.io",
   baseUrl: "/usedb/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "usedbjs", // Usually your GitHub org/user name.
@@ -142,19 +142,6 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-      },
-    ],
-  ],
-  plugins: [
-    [
-      "@docusaurus/plugin-client-redirects",
-      {
-        redirects: [
-          {
-            to: "/usedb/introduction",
-            from: ["/"],
-          },
-        ],
       },
     ],
   ],
