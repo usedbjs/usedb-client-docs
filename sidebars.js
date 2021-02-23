@@ -2,7 +2,7 @@ module.exports = {
   someSidebar: {
     "Getting Started": ["introduction", "installation", "motivation"],
     Concepts: ["model", "binding", "cache"],
-    Examples: ["runtime-binding-example"],
+    Examples: ["todo-example"],
     "ServerSide Binding": [
       {
         Laravel: [
