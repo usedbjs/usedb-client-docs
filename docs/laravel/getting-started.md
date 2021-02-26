@@ -1,7 +1,8 @@
 ---
 id: getting-started
-title: Getting Started Laravel
+# title: Getting Started
 sidebar_label: Getting Started
+hide_title: true
 ---
 
 ## Introduction

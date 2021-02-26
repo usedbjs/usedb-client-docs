@@ -5,20 +5,19 @@ module.exports = {
   baseUrl: "/usedb/",
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon_usedb.png",
   organizationName: "usedbjs", // Usually your GitHub org/user name.
   projectName: "usedb", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "UseDB",
+      // title: "UseDB",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        src: "img/useDB-Logo1.png",
       },
       items: [
         {
           to: "docs/introduction",
-          // activeBasePath: "docs",
           label: "Docs",
           position: "right",
         },
@@ -39,6 +38,7 @@ module.exports = {
           position: "right",
         },
       ],
+      style: "primary",
     },
     footer: {
       style: "dark",
@@ -122,6 +122,18 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} UseDB`,
     },
+    // algolia: {
+    //   apiKey: 'YOUR_API_KEY',
+    //   indexName: 'YOUR_INDEX_NAME',
+
+    //   // Optional: see doc section bellow
+    //   contextualSearch: true,
+
+    //   // Optional: Algolia search parameters
+    //   searchParameters: {},
+
+    //   //... other Algolia params
+    // },
   },
   presets: [
     [

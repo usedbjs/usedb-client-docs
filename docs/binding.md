@@ -18,7 +18,6 @@ interface Binding {
 ## Runtime Binding
 
 - Runtime binding lets you perform queries without any backend resources.
-
 - It stores data in-memory. See [LocalStorage Binding](xyz).
 
 #### Creating connection object

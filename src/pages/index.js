@@ -82,7 +82,7 @@ const Backlinks = (props) => (
             <span>
               <a href="https://nativebase.io/" target="_blank">
                 <img
-                  src={useBaseUrl("img/native-base.jpeg")}
+                  src={useBaseUrl("img/native-base-icon.png")}
                   width="25px"
                 ></img>
                 NativeBase
@@ -140,11 +140,12 @@ function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
-        <div className="container">
+        <div className="container ">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
+              id="getStartedButton"
               className={clsx(
                 "button button--outline button--secondary button--lg",
                 styles.getStarted
