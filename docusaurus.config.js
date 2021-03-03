@@ -26,19 +26,19 @@ module.exports = {
           label: "FAQ",
           position: "right",
         },
+
+        {
+          to:
+            "https://geekyants.com/hire?utm_source=usedb&utm_medium=header&utm_campaign=usedb",
+          label: "Hire Us",
+          position: "right",
+        },
         {
           to: "https://github.com/usedbjs/usedb",
           label: "GitHub",
           position: "right",
         },
-        {
-          to:
-            "https://geekyants.com/hire?utm_source=usedb&utm_medium=header&utm_campaign=usedb",
-          label: "Hire the Creators",
-          position: "right",
-        },
       ],
-      style: "primary",
     },
     footer: {
       style: "dark",
@@ -68,23 +68,23 @@ module.exports = {
             },
           ],
         },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/usedb",
-            },
-            // {
-            //   label: "Discord",
-            //   href: "https://discordapp.com/invite/docusaurus",
-            // },
-            // {
-            //   label: "Twitter",
-            //   href: "https://twitter.com/docusaurus",
-            // },
-          ],
-        },
+        // {
+        //   title: "Community",
+        //   items: [
+        //     {
+        //       label: "Stack Overflow",
+        //       href: "https://stackoverflow.com/questions/tagged/usedb",
+        //     },
+        //     // {
+        //     //   label: "Discord",
+        //     //   href: "https://discordapp.com/invite/docusaurus",
+        //     // },
+        //     // {
+        //     //   label: "Twitter",
+        //     //   href: "https://twitter.com/docusaurus",
+        //     // },
+        //   ],
+        // },
         {
           title: "More",
           items: [
@@ -113,7 +113,7 @@ module.exports = {
           title: " ",
           items: [
             {
-              label: "Built with ❤️ at GeekyAnts.",
+              label: "Built with ❤️ at GeekyAnts",
               href:
                 "https://geekyants.com/?utm_source=usedb&utm_medium=footer&utm_campaign=usedb",
             },

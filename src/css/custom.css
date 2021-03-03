@@ -7,7 +7,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #ff4da6;
+  --ifm-color-primary: #ff3867;
   /* --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -15,10 +15,10 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208); */
   --ifm-code-font-size: 95%;
-  --ifm-navbar-link-color: black;
-  --ifm-navbar-link-hover-color: darkgray;
-  --ifm-tagline-color: black;
-  --svg-fill-color: #21232a;
+  /* --ifm-navbar-link-color: black;
+  --ifm-navbar-link-hover-color: darkgray; */
+  /* --ifm-tagline-color: black; */
+  /* --svg-fill-color: #21232a; */
 }
 
 html[data-theme="dark"] {
@@ -70,12 +70,18 @@ html[data-theme="dark"] {
   text-decoration: none;
 }
 
-.navbar {
+/* .navbar {
   box-shadow: none;
-}
+} */
 
 #getStartedButton {
   border: 0;
   background-color: white;
   color: #ff4da6;
+}
+
+.heading1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 3rem;
 }
