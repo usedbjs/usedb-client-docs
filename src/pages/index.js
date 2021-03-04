@@ -51,44 +51,39 @@ function Home() {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <header
-        className={clsx("hero", styles.heroBanner)}
-        // style={{
-        //   backgroundImage: `url(${useBaseUrl("img/home.svg")})`,
-        //   backgroundSize: "100%",
-        //   backgroundRepeat: "no-repeat",
-        //   // backgroundPosition: "center",
-        // }}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col col--5" style={{ color: "black" }}>
-              <h1 className="hero__title hero_title--left">
-                {siteConfig.tagline}
-              </h1>
-              <p className="hero__subtitle hero__subtitle--left">
-                {/* {siteConfig.tagline} */}
-                useDB is an open source library to make backend agnostic API
-                calls using ORM like querying interface.
-              </p>
-              <div className={styles.buttons}>
-                <Link
-                  // id="getStartedButton"
-                  className={clsx(
-                    "button button--outline button--secondary button--lg ",
-                    styles.getStarted
-                  )}
-                  to={useBaseUrl("docs/introduction")}
-                  style={{ backgroundColor: "#ff3867", color: "white" }}
-                >
-                  Get Started
-                </Link>
-              </div>
-            </div>
+      <div className="header" style={{ position: "relative" }}>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="useDB" />
+        <meta
+          property="og:description"
+          content="DB connection for React without writing the APIs"
+        />
+        <meta property="og:image" content={useBaseUrl("img/useDB-Logo1.png")} />
+        <meta property="og:url" content={useBaseUrl + "/usedb"} />
+        <meta property="og:site_name" content="useDB" />
+
+        <img id="bgLandingImage" src={useBaseUrl("img/home.svg")} />
+        <div id="contentDiv">
+          <h1 className="hero__title hero_title--left">{siteConfig.tagline}</h1>
+          <p className="hero__subtitle hero__subtitle--left">
+            useDB is an open source library to make backend agnostic API calls
+            using ORM like querying interface.
+          </p>
+          <div className={styles.buttons}>
+            <Link
+              id="getStartedBtn"
+              className={clsx(
+                "button button--outline button--secondary button--lg ",
+                styles.getStarted
+              )}
+              to={useBaseUrl("docs/introduction")}
+            >
+              Get Started
+            </Link>
           </div>
         </div>
-      </header>
-      <img src={useBaseUrl("img/home.png")} />
+      </div>
+
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
