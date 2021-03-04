@@ -51,8 +51,18 @@ function Home() {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <div style={{ position: "relative" }}>
-        <img id="bgLandingImage" src={useBaseUrl("img/home.png")} />
+      <div className="header" style={{ position: "relative" }}>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="useDB" />
+        <meta
+          property="og:description"
+          content="DB connection for React without writing the APIs"
+        />
+        <meta property="og:image" content={useBaseUrl("img/useDB-Logo1.png")} />
+        <meta property="og:url" content={useBaseUrl + "/usedb"} />
+        <meta property="og:site_name" content="useDB" />
+
+        <img id="bgLandingImage" src={useBaseUrl("img/home.svg")} />
         <div id="contentDiv">
           <h1 className="hero__title hero_title--left">{siteConfig.tagline}</h1>
           <p className="hero__subtitle hero__subtitle--left">
