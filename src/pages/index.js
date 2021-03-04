@@ -51,44 +51,29 @@ function Home() {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <header
-        className={clsx("hero", styles.heroBanner)}
-        // style={{
-        //   backgroundImage: `url(${useBaseUrl("img/home.svg")})`,
-        //   backgroundSize: "100%",
-        //   backgroundRepeat: "no-repeat",
-        //   // backgroundPosition: "center",
-        // }}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col col--5" style={{ color: "black" }}>
-              <h1 className="hero__title hero_title--left">
-                {siteConfig.tagline}
-              </h1>
-              <p className="hero__subtitle hero__subtitle--left">
-                {/* {siteConfig.tagline} */}
-                useDB is an open source library to make backend agnostic API
-                calls using ORM like querying interface.
-              </p>
-              <div className={styles.buttons}>
-                <Link
-                  // id="getStartedButton"
-                  className={clsx(
-                    "button button--outline button--secondary button--lg ",
-                    styles.getStarted
-                  )}
-                  to={useBaseUrl("docs/introduction")}
-                  style={{ backgroundColor: "#ff3867", color: "white" }}
-                >
-                  Get Started
-                </Link>
-              </div>
-            </div>
+      <div style={{ position: "relative" }}>
+        <img id="bgLandingImage" src={useBaseUrl("img/home.png")} />
+        <div id="contentDiv">
+          <h1 className="hero__title hero_title--left">{siteConfig.tagline}</h1>
+          <p className="hero__subtitle hero__subtitle--left">
+            useDB is an open source library to make backend agnostic API calls
+            using ORM like querying interface.
+          </p>
+          <div className={styles.buttons}>
+            <Link
+              id="getStartedBtn"
+              className={clsx(
+                "button button--outline button--secondary button--lg ",
+                styles.getStarted
+              )}
+              to={useBaseUrl("docs/introduction")}
+            >
+              Get Started
+            </Link>
           </div>
         </div>
-      </header>
-      <img src={useBaseUrl("img/home.png")} />
+      </div>
+
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
