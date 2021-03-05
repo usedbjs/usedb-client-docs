@@ -74,9 +74,13 @@ html[data-theme="dark"] {
   box-shadow: none;
 } */
 
-#getStartedButton {
-  border: 0;
-  background-color: white;
+.header {
+  position: relative;
+}
+
+#getStartedBtn {
+  border: 0px;
+
   color: #ff4da6;
 }
 
@@ -93,17 +97,20 @@ html[data-theme="dark"] {
 
 #contentDiv {
   position: absolute;
-  top: 50px;
+  top: 70px;
   left: 70px;
   width: 30%;
-  color: black;
+}
+
+#contentDiv div {
+  text-align: inherit;
 }
 
 #getStartedBtn {
   background-color: #ff3867;
   color: white;
   margin-left: 10%;
-  margin-top: 20%;
+  margin-top: 24%;
 }
 
 @media only screen and (max-width: 1170px) {
@@ -115,7 +122,7 @@ html[data-theme="dark"] {
     width: 40%;
   }
   #getStartedBtn {
-    margin-top: 5%;
+    /* margin-top: 5%; */
   }
 }
 
@@ -127,42 +134,69 @@ html[data-theme="dark"] {
     width: 50%;
   }
   #contentDiv h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   #contentDiv p {
-    width: 70%;
-    font-size: 1rem;
+    /* width: 70%; */
+    font-size: 1.5rem;
   }
   #getStartedBtn {
     margin-left: 0;
-    /* margin-top: 5%; */
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 755px) and (min-width: 640px) {
   #bgLandingImage {
-    height: 350px;
+    height: 450px;
   }
   #contentDiv {
     width: 60%;
-    /* position: inherit; */
     top: 0;
     left: 30px;
     right: 30px;
     bottom: 50px;
   }
-  #contentDiv h1 {
-    font-size: 1.5rem;
-  }
-  #contentDiv p {
-    width: 75%;
-    font-size: 1rem;
-  }
+
   #getStartedBtn {
     margin-bottom: 5%;
+    /* margin-top: 10%; */
   }
 
   .heading1 {
     font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #backgroundImage {
+    display: none;
+  }
+  #contentDiv {
+    position: inherit;
+    width: auto;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    bottom: 50px;
+    padding: 0 25px;
+    text-align: center;
+  }
+  #contentDiv h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  #contentDiv p {
+    width: auto;
+    font-size: 1rem;
+  }
+  #contentDiv div {
+    text-align: center;
+  }
+  .heading1 {
+    font-size: 2rem;
+  }
+  #getStartedBtn {
+    margin-bottom: 5%;
+    margin-top: 10%;
   }
 }
