@@ -5,11 +5,12 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
+import BackgroundImage from "./BackgroundImage";
 
 const features = [
   {
     title: "Flutter Starter",
-    imageUrl: "img/undraw_docusaurus_mountain.svg",
+    imageUrl: "img/FS-Blue.png",
     description: <>A Flutter starter-kit for production-level apps.</>,
   },
   {
@@ -51,18 +52,17 @@ function Home() {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <div className="header" style={{ position: "relative" }}>
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="useDB" />
-        <meta
-          property="og:description"
-          content="DB connection for React without writing the APIs"
-        />
-        <meta property="og:image" content={useBaseUrl("img/useDB-Logo1.png")} />
-        <meta property="og:url" content={useBaseUrl + "/usedb"} />
-        <meta property="og:site_name" content="useDB" />
-
-        <img id="bgLandingImage" src={useBaseUrl("img/home.svg")} />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="useDB" />
+      <meta
+        property="og:description"
+        content="DB connection for React without writing the APIs"
+      />
+      <meta property="og:image" content={useBaseUrl("img/useDB-Logo1.png")} />
+      <meta property="og:url" content={useBaseUrl + "/usedb"} />
+      <meta property="og:site_name" content="useDB" />
+      <div className="header">
+        <BackgroundImage />
         <div id="contentDiv">
           <h1 className="hero__title hero_title--left">{siteConfig.tagline}</h1>
           <p className="hero__subtitle hero__subtitle--left">

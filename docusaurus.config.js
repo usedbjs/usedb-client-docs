@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: "/usedb/",
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon_usedb.png",
+  favicon: "img/icon.svg",
   organizationName: "usedbjs", // Usually your GitHub org/user name.
   projectName: "usedb", // Usually your repo name.
   themeConfig: {
@@ -15,6 +15,7 @@ module.exports = {
         alt: "My Site Logo",
         src: "img/useDB-Logo1.png",
         srcDark: "img/useDB-Logo2.png",
+        // src: "img/usedb-logo.svg",
       },
       items: [
         {
@@ -69,23 +70,7 @@ module.exports = {
             },
           ],
         },
-        // {
-        //   title: "Community",
-        //   items: [
-        //     {
-        //       label: "Stack Overflow",
-        //       href: "https://stackoverflow.com/questions/tagged/usedb",
-        //     },
-        //     // {
-        //     //   label: "Discord",
-        //     //   href: "https://discordapp.com/invite/docusaurus",
-        //     // },
-        //     // {
-        //     //   label: "Twitter",
-        //     //   href: "https://twitter.com/docusaurus",
-        //     // },
-        //   ],
-        // },
+
         {
           title: "More",
           items: [
@@ -154,6 +139,18 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
+        },
+      },
+    ],
+  ],
+  plugins: [
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        createRedirects: function (existingPath) {
+          if (existingPath === "/usedb") {
+            return ["/"]; // string | string[]
+          }
         },
       },
     ],
