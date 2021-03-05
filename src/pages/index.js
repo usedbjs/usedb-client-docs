@@ -8,33 +8,20 @@ import styles from "./styles.module.css";
 
 const features = [
   {
-    title: "Easy to Use",
+    title: "Flutter Starter",
     imageUrl: "img/undraw_docusaurus_mountain.svg",
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    description: <>A Flutter starter-kit for production-level apps.</>,
   },
   {
-    title: "Focus on What Matters",
-    imageUrl: "img/undraw_docusaurus_tree.svg",
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: "SyncState",
+    imageUrl: "img/synchState-logo.png",
+    description: <>A state management library for React & JS apps</>,
   },
   {
-    title: "Powered by React",
-    imageUrl: "img/undraw_docusaurus_react.svg",
+    title: "NativeBase",
+    imageUrl: "img/native-base-icon.png",
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+      <>Essential cross-platform UI components for React Native & Vue Native.</>
     ),
   },
 ];
@@ -48,88 +35,13 @@ function Feature({ imageUrl, title, description }) {
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <h3 className="text--center" style={{ marginTop: "20px" }}>
+        {title}
+      </h3>
+      <p className="text--center">{description}</p>
     </div>
   );
 }
-
-const Backlinks = (props) => (
-  <div className="moreProjects">
-    <h1 id="moreProjectsHeading">Related Projects</h1>
-    <br></br>
-    <div>
-      <div className="backlink">
-        <div>
-          <h2>
-            <span>
-              <a href="https://syncstate.github.io/" target="_blank">
-                <img
-                  width="25px"
-                  src={useBaseUrl("img/synchState-logo.png")}
-                ></img>
-                SyncState
-              </a>
-            </span>
-          </h2>
-          <p>A state management library for React & JS apps</p>
-        </div>
-      </div>
-
-      <div className="backlink">
-        <div>
-          <h2>
-            <span>
-              <a href="https://nativebase.io/" target="_blank">
-                <img
-                  src={useBaseUrl("img/native-base.jpeg")}
-                  width="25px"
-                ></img>
-                NativeBase
-              </a>
-            </span>
-          </h2>
-          <p>
-            Essential cross-platform UI components for React Native & Vue
-            Native.
-          </p>
-        </div>
-      </div>
-      <div className="backlink">
-        <div>
-          <h2>
-            <span>
-              <a href="https://vue-native.io/" target="_blank">
-                <img src={useBaseUrl("img/vueNative.png")} width="25px"></img>
-                Vue Native
-              </a>
-            </span>
-          </h2>
-          <p>
-            Vue Native is a framework to build cross platform native mobile apps
-            using JavaScript. It is a wrapper around the APIs of React Native.
-          </p>
-        </div>
-      </div>
-      <div className="backlink">
-        <div>
-          <h2>
-            <span>
-              <a href="https://builderx.io/" target="_blank">
-                <img src={useBaseUrl("img/builderx.png")} width="25px"></img>
-                BuilderX
-              </a>
-            </span>
-          </h2>
-          <p>
-            BuilderX is a browser based design tool that codes React Native &
-            React for you.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-);
 
 function Home() {
   const context = useDocusaurusContext();
@@ -139,14 +51,29 @@ function Home() {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <header className={clsx("hero hero--primary", styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+      <div className="header" style={{ position: "relative" }}>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="useDB" />
+        <meta
+          property="og:description"
+          content="DB connection for React without writing the APIs"
+        />
+        <meta property="og:image" content={useBaseUrl("img/useDB-Logo1.png")} />
+        <meta property="og:url" content={useBaseUrl + "/usedb"} />
+        <meta property="og:site_name" content="useDB" />
+
+        <img id="bgLandingImage" src={useBaseUrl("img/home.svg")} />
+        <div id="contentDiv">
+          <h1 className="hero__title hero_title--left">{siteConfig.tagline}</h1>
+          <p className="hero__subtitle hero__subtitle--left">
+            useDB is an open source library to make backend agnostic API calls
+            using ORM like querying interface.
+          </p>
           <div className={styles.buttons}>
             <Link
+              id="getStartedBtn"
               className={clsx(
-                "button button--outline button--secondary button--lg",
+                "button button--outline button--secondary button--lg ",
                 styles.getStarted
               )}
               to={useBaseUrl("docs/introduction")}
@@ -155,12 +82,38 @@ function Home() {
             </Link>
           </div>
         </div>
-      </header>
+      </div>
+
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
-              <Backlinks />
+              <h1 className="heading1">What is useDB?</h1>
+              <p style={{ textAlign: "center" }}>
+                useDB is an open source library to make backend agnostic API
+                calls using ORM like querying interface.
+              </p>
+              <iframe
+                src="https://codesandbox.io/embed/todo-nv180?fontsize=14&hidenavigation=1&theme=dark"
+                style={{
+                  width: "100%",
+                  height: "600px",
+                  border: "0",
+                  borderRadius: "4px",
+                  overflow: "hidden",
+                  margin: "50px 0",
+                }}
+                title="todo"
+                allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+                sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+              ></iframe>
+              <h1 className="heading1">Related Projects</h1>
+              <div className="row" style={{ marginTop: "50px" }}>
+                {features.map((props, idx) => (
+                  <Feature key={idx} {...props} />
+                ))}
+              </div>
+              {/* <Backlinks /> */}
             </div>
           </section>
         )}

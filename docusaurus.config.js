@@ -5,20 +5,20 @@ module.exports = {
   baseUrl: "/usedb/",
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon_usedb.png",
   organizationName: "usedbjs", // Usually your GitHub org/user name.
   projectName: "usedb", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "UseDB",
+      // title: "UseDB",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        src: "img/useDB-Logo1.png",
+        srcDark: "img/useDB-Logo2.png",
       },
       items: [
         {
           to: "docs/introduction",
-          // activeBasePath: "docs",
           label: "Docs",
           position: "right",
         },
@@ -27,15 +27,16 @@ module.exports = {
           label: "FAQ",
           position: "right",
         },
-        {
-          to: "https://github.com/usedbjs/usedb",
-          label: "GitHub",
-          position: "right",
-        },
+
         {
           to:
             "https://geekyants.com/hire?utm_source=usedb&utm_medium=header&utm_campaign=usedb",
-          label: "Hire the Creators",
+          label: "Hire Us",
+          position: "right",
+        },
+        {
+          to: "https://github.com/usedbjs/usedb",
+          label: "GitHub",
           position: "right",
         },
       ],
@@ -68,23 +69,23 @@ module.exports = {
             },
           ],
         },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/usedb",
-            },
-            // {
-            //   label: "Discord",
-            //   href: "https://discordapp.com/invite/docusaurus",
-            // },
-            // {
-            //   label: "Twitter",
-            //   href: "https://twitter.com/docusaurus",
-            // },
-          ],
-        },
+        // {
+        //   title: "Community",
+        //   items: [
+        //     {
+        //       label: "Stack Overflow",
+        //       href: "https://stackoverflow.com/questions/tagged/usedb",
+        //     },
+        //     // {
+        //     //   label: "Discord",
+        //     //   href: "https://discordapp.com/invite/docusaurus",
+        //     // },
+        //     // {
+        //     //   label: "Twitter",
+        //     //   href: "https://twitter.com/docusaurus",
+        //     // },
+        //   ],
+        // },
         {
           title: "More",
           items: [
@@ -113,7 +114,7 @@ module.exports = {
           title: " ",
           items: [
             {
-              label: "Built with ❤️ at GeekyAnts.",
+              label: "Built with ❤️ at GeekyAnts",
               href:
                 "https://geekyants.com/?utm_source=usedb&utm_medium=footer&utm_campaign=usedb",
             },
@@ -122,6 +123,18 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} UseDB`,
     },
+    // algolia: {
+    //   apiKey: 'YOUR_API_KEY',
+    //   indexName: 'YOUR_INDEX_NAME',
+
+    //   // Optional: see doc section bellow
+    //   contextualSearch: true,
+
+    //   // Optional: Algolia search parameters
+    //   searchParameters: {},
+
+    //   //... other Algolia params
+    // },
   },
   presets: [
     [
