@@ -13,9 +13,8 @@ module.exports = {
       // title: "UseDB",
       logo: {
         alt: "My Site Logo",
-        src: "img/useDB-Logo1.png",
-        srcDark: "img/useDB-Logo2.png",
-        // src: "img/usedb-logo.svg",
+        src: "img/usedb-logo.svg",
+        srcDark: "img/usedb-logo-dark.svg",
       },
       items: [
         {

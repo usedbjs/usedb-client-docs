@@ -37,7 +37,7 @@ function BackgroundImage() {
       </defs>
       <g data-name="Group 6" transform="translate(0 -123)">
         <path
-          fill={isDarkTheme ? "#000" : "#fff"}
+          fill={isDarkTheme ? "#18191a" : "#ffffff"}
           d="M0 0H1440V690H0z"
           data-name="Rectangle 1"
           transform="translate(0 123)"

@@ -70,9 +70,9 @@ html[data-theme="dark"] {
   text-decoration: none;
 }
 
-/* .navbar {
+.navbar {
   box-shadow: none;
-} */
+}
 
 .header {
   position: relative;
@@ -167,7 +167,7 @@ html[data-theme="dark"] {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 770px) {
   #backgroundImage {
     display: none;
   }
@@ -180,14 +180,15 @@ html[data-theme="dark"] {
     bottom: 50px;
     padding: 0 25px;
     text-align: center;
+    margin: 0 10%;
   }
   #contentDiv h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     width: 100%;
   }
   #contentDiv p {
     width: auto;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   #contentDiv div {
     text-align: center;
@@ -198,5 +199,19 @@ html[data-theme="dark"] {
   #getStartedBtn {
     margin-bottom: 5%;
     margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #contentDiv {
+    margin: auto;
+  }
+  #contentDiv h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  #contentDiv p {
+    width: auto;
+    font-size: 1rem;
   }
 }

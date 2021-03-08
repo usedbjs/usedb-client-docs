@@ -12,11 +12,13 @@ const features = [
     title: "Flutter Starter",
     imageUrl: "img/FS-Blue.png",
     description: <>A Flutter starter-kit for production-level apps.</>,
+    website: "https://flutter-starter.github.io/",
   },
   {
     title: "SyncState",
     imageUrl: "img/synchState-logo.png",
     description: <>A state management library for React & JS apps</>,
+    website: "https://syncstate.github.io/",
   },
   {
     title: "NativeBase",
@@ -24,20 +26,25 @@ const features = [
     description: (
       <>Essential cross-platform UI components for React Native & Vue Native.</>
     ),
+    website: "https://nativebase.io/",
   },
 ];
 
-function Feature({ imageUrl, title, description }) {
+function Feature({ imageUrl, title, description, website }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx("col col--4", styles.feature)}>
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+          <a href={website} style={{ textDecoration: "none" }}>
+            <img className={styles.featureImage} src={imgUrl} alt={title} />
+          </a>
         </div>
       )}
       <h3 className="text--center" style={{ marginTop: "20px" }}>
-        {title}
+        <a href={website} style={{ textDecoration: "none", color: "inherit" }}>
+          {title}
+        </a>
       </h3>
       <p className="text--center">{description}</p>
     </div>
