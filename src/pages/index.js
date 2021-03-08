@@ -5,7 +5,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
-import BackgroundImage from "./BackgroundImage";
+import BackgroundImage from "../components/BackgroundImage";
 
 const features = [
   {
@@ -113,7 +113,6 @@ function Home() {
                   <Feature key={idx} {...props} />
                 ))}
               </div>
-              {/* <Backlinks /> */}
             </div>
           </section>
         )}
