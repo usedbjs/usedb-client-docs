@@ -31,29 +31,6 @@ html[data-theme="dark"] {
   padding: 0 var(--ifm-pre-padding);
 }
 
-.backlink {
-  padding-bottom: 1rem;
-}
-
-.backlink img {
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-.backlink h2 {
-  margin-bottom: 5px;
-  margin-top: 0px;
-}
-
-/* .backlink h2 a {
-  color: black;
-} */
-
-.backlink h2 a:hover {
-  /* color: #78468e; */
-  text-decoration: none;
-}
-
 #moreProjectsHeading {
   font-size: 2rem;
 }
@@ -76,6 +53,7 @@ html[data-theme="dark"] {
 
 .header {
   position: relative;
+  height: 786px;
 }
 
 #getStartedBtn {
@@ -121,9 +99,6 @@ html[data-theme="dark"] {
   #contentDiv {
     width: 40%;
   }
-  #getStartedBtn {
-    /* margin-top: 5%; */
-  }
 }
 
 @media only screen and (max-width: 947px) {
@@ -168,6 +143,9 @@ html[data-theme="dark"] {
 }
 
 @media only screen and (max-width: 770px) {
+  .header {
+    height: inherit;
+  }
   #backgroundImage {
     display: none;
   }

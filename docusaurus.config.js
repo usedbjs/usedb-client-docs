@@ -77,21 +77,11 @@ module.exports = {
               label: "GitHub",
               href: "https://github.com/usedbjs/usedb",
             },
-            //   {
-            //     html: `
-            //    <a
-            //    className="github-button"
-            //    href="https://github.com/usedbjs/usedb/stargazers"
-            //    data-icon="octicon-star"
-            //    data-count-href="https://github.com/usedbjs/usedb/stargazers"
-            //    data-show-count="true"
-            //    data-count-aria-label="# stargazers on GitHub"
-            //    aria-label="Star this project on GitHub"
-            //  >
-            //    Star
-            //  </a>
-            //    `,
-            //   },
+            {
+              label: "Contribution Guidelines",
+              href:
+                "https://github.com/usedbjs/usedb/blob/main/contributions.md",
+            },
           ],
         },
         {
@@ -107,18 +97,6 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} UseDB`,
     },
-    // algolia: {
-    //   apiKey: 'YOUR_API_KEY',
-    //   indexName: 'YOUR_INDEX_NAME',
-
-    //   // Optional: see doc section bellow
-    //   contextualSearch: true,
-
-    //   // Optional: Algolia search parameters
-    //   searchParameters: {},
-
-    //   //... other Algolia params
-    // },
   },
   presets: [
     [
